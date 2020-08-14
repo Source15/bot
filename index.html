@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Загадывание случайного числа от 1 до 100!</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <script src="js/index.js"></script>
+</head>
+
+<body onload="init()">
+   <div id="container">
+      <h2>Угадай число<br>От 1 до 100</h2>
+      <h3>Угадай Число!!</h3>
+      <hr>
+      <p>Уровень сложности</p>
+      <button id="easyBtn" onclick="easyMode()" class="">Легко: 10 попыток</button>
+      <button id="hardBtn" onclick="hardMode()" class="">Тяжело: 5 попыток</button>
+      <button id="newGameButton" onclick="newGame()">Новая Игра!</button>
+   </div>
+   <div class="panel">
+      <h3 id="textOutput">Введите своё число и нажмите Enter</h3>
+      <input class="number" id="inputBox" onchange="compareGuess()">
+      <p>количество предыдущих попыток:<span id="attepmts"></span></p>
+      </input>
+   </div>
+   <div class="panel">
+      <p>Ваши предыдушие попытки</p>
+      <p id="guessLog"></p>
+   </div>
+</body>
+
+</html>
